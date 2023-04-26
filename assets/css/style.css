@@ -97,19 +97,18 @@ svg:hover {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0px;
+    padding: 200px 0px;
 }
-#secao0 h2{
+#secao0 h1{
     color: #FFFFFF;
     font-family: "Poppins", Sans-serif;
     font-size: 35px;
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0px;
-    text-shadow: 3px 3px 19px rgba(0, 0, 0, 0.98);
     margin-bottom: 20px;
 }
-#secao0 h2 span{
+#secao0 h1 span{
     background-color: #FA4400;
 }
 #secao0 p.descricao{
@@ -147,14 +146,25 @@ svg:hover {
     font-weight: 400;
     letter-spacing: 3.1px;
     margin-top: 20px;
+    text-align: center;
 }
-
 #secao0 .videoproduto{
     width: 650px;
     height: 350px;
 }
+#secao0 .thumb0{
+    display: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FA4400;
+    box-shadow: 0px 0px 10px 0px #FA4400;
+}
 #secao0 .thumb{
     position: relative;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FA4400;
+    box-shadow: 0px 0px 10px 0px #FA4400;
 }
 #secao0 .thumb img{
     position: absolute;
@@ -857,15 +867,23 @@ footer h2{
     }
     .videoproduto{
         display: block;
-        margin-top: 20px;
         width: 100% !important;
         height: 40vh !important;
     }
-    
-    #secao0 .thumb{
+    #secao0{
+        padding: 60px 0px;
+    }
+    #secao0 .thumb0{
+        display: block;
         position: relative;
         width: 100% !important;
-        height: 40vh !important;
+        height: auto !important;
+    }
+    #secao0 .thumb{
+        display: none;
+        position: relative;
+        width: 100% !important;
+        height: auto !important;
     }
     #secao0 .thumb img{
         width: 110%;
