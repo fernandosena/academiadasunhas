@@ -121,6 +121,9 @@ svg:hover {
     text-shadow: 0px 0px 10px #524D4D;
     margin-bottom: 20px;
 }
+#secao0 .botao{
+    display: table;
+}
 #secao0 .btn{
     font-family: "Roboto", Sans-serif;
     font-size: 21px;
