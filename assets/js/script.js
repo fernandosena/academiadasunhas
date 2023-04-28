@@ -40,25 +40,26 @@ $(document).ready(function onDocumentReady() {
   nome.sort(() => Math.random() - 0.5);
   var i = 0, qtd = nome.length;
   setInterval(function doThis() {
-  if (i == 11) return; // somente 11 eventos serão disparados
-  if (i == 1 || i == 8 || i == 10) {
-  toastr.info('<a href="' + URL_FINAL + '">Clique e Reserve sua vaga também!</a> ' + (qtd + (i * 3)) + ' novas alunas compraram nos últimos 30min.', {
-  timeOut: 5000,
-  positionClass: "toast-bottom-right",
-  });
-  }
-  toastr.success('<a href="' + URL_FINAL + '">Clique e Reserve sua vaga também!</a> ' + nome[i++] + ' acabou de reservar a vaga dela.', {
-  timeOut: 5000,
-  positionClass: "toast-bottom-right",
-  })
+    if (i == 11) return; // somente 11 eventos serão disparados
+    if (i == 1 || i == 8 || i == 10) {
+        toastr.info('<a href="' + URL_FINAL + '">Clique e Reserve sua vaga também!</a> ' + (qtd + (i * 3)) + ' novas alunas compraram nos últimos 30min.', {
+        timeOut: 5000,
+        positionClass: "toast-bottom-right",
+      });
+    }
+      toastr.success('<a href="' + URL_FINAL + '">Clique e Reserve sua vaga também!</a> ' + nome[i++] + ' acabou de reservar a vaga dela.', {
+      timeOut: 5000,
+      positionClass: "toast-bottom-right",
+    })
   }, 10 * 1000); // a cada 10 segundos
-  });
+});
   
-  document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function (e) {
 if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) { // Prevent F12
-e.preventDefault()
+  e.preventDefault()
 }
 }, true);
+
 document.addEventListener('contextmenu', function (e) {
-e.preventDefault()
+  e.preventDefault()
 }, true);

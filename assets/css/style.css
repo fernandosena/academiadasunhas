@@ -6,6 +6,33 @@
 a{
     text-decoration: none;
 }
+main.termos{
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+header.cabecalho{
+    background-image: url("../img/bg-academia-unhas-01.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+header.cabecalho h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 23px;
+    font-weight: bolder;
+}
+main.termos p{
+    margin: 20px 0;
+}
 .container{
     width: 90%;
     margin: 0 auto;
@@ -97,7 +124,7 @@ svg:hover {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 0px;
+    padding: 60px 0px;
 }
 #secao0 h1{
     color: #FFFFFF;
@@ -114,7 +141,7 @@ svg:hover {
 #secao0 p.descricao{
     color: #ffffff;
     font-family: "Poppins", Sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.2em;
     letter-spacing: 0px;
@@ -152,8 +179,8 @@ svg:hover {
     text-align: center;
 }
 #secao0 .videoproduto{
-    width: 650px;
-    height: 350px;
+    width: 750px;
+    height: 500px;
 }
 #secao0 .thumb0{
     display: none;
@@ -504,6 +531,9 @@ svg:hover {
 }
 #secao6 .item2{
     padding-left: 60px;
+}
+#secao6 img{
+    width: 450px;
 }
 #secao6 h2{
     color: #330f1f;
@@ -857,7 +887,7 @@ footer h2{
 }
 
 @media only screen and (max-width: 480px) {
-    .display-flex, .display-flex-top{
+    .display-flex, .display-flex-middle, .display-flex-top{
         display: block;
     }
     #header .display-flex, #header.display-flex-top{
@@ -878,6 +908,9 @@ footer h2{
     }
     #secao0{
         padding: 60px 0px;
+    }
+    .btn{
+        text-align: center;
     }
     #secao0 .thumb0{
         display: block;
@@ -990,7 +1023,6 @@ footer h2{
 [dir="rtl"] .slick-next:before {
     content: "←";
 }
-
 .slick-dots {
     position: absolute;
     bottom: -45px;
